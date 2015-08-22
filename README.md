@@ -14,7 +14,8 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-##Prepare source data:
+##Instructions
+###Prepare source data:
 There are 2 options to download the source data
 
 * Option 1: By running the download_data.R script.
@@ -22,12 +23,10 @@ There are 2 options to download the source data
 * Option 2: Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive, say C:\Users\Administrator\Documents\R_Programing\UCI HAR Dataset\. In RStudio: setwd("C:/Users/Administrator/Documents/R_Programing/UCI HAR Dataset")
 
 
-##Instructions to run the R script
+###Run run_analysis.R
+Download the run_analysis.R to the same working folder (C:\Users\Administrator\Documents\R_Programing\UCI HAR Dataset\)
+In RStudio, source("run_analysis.R")
 
-
-
-* Put run_analysis.R into C:\Users\yourname\Documents\R\UCI HAR Dataset\
-
-* In RStudio: setwd("C:\\\\Users\\\\yourname\\\\Documents\\\\R\\\\UCI HAR Dataset\\\\"), followed by: source("run_analysis.R")
-
-* Use data <- read.table("data_set_with_the_averages.txt") to read the data. It is 180x68 because there are 30 subjects and 6 activities, thus "for each activity and each subject" means 30 * 6 = 180 rows. Note that the provided R script has no assumptions on numbers of records, only on locations of files.
+###Get final result
+After running the run_analysis.R, the final tidy data set with the averages is saved as tidy_data_set_with_the_average.txt file under the same working folder
+Or load into RStudio by typing: Use data <- read.table("tidy_data_set_with_the_average.txt") to read the data. 
