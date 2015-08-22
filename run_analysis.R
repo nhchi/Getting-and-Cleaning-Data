@@ -40,12 +40,12 @@ result = cleaned[1:(numofSubjects*numofActivities), ]
 
 row = 1
 for (s in 1:numofSubjects) {
-    for (a in 1:numofActivities) {
-        result[row, 1] = Subjects[s]
-        result[row, 2] = activities[a, 2]
-        tmp <- cleaned[cleaned$subject==s & cleaned$activity==activities[a, 2], ]
-        result[row, 3:numCols] <- colMeans(tmp[, 3:numofCols])
-        row = row+1
-    }
+  for (a in 1:numofActivities) {
+    result[row, 1] = Subjects[s]
+    result[row, 2] = activities[a, 2]
+    tmp <- cleaned[cleaned$subject==s & cleaned$activity==activities[a, 2], ]
+    result[row, 3:numofCols] <- colMeans(tmp[, 3:numofCols])
+    row = row+1
+  }
 }
 write.table(result, "tidy_data_set_with_the_average.txt",row.name = FALSE)
