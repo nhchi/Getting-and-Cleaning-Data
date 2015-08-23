@@ -6,6 +6,7 @@ The download_data.R script downloads and unzips the data source (https://d396qus
   1. Download the data soure package (.zip) from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and save into current working folder. Only download for the 1st time (the script won't download the zip file again if it's already there).
 Content type 'application/zip' length 62556944 bytes (59.7 MB)
   2. Unzip the downloaded file. Assuming that the current PC already installed WinRAR application for unzip the file. Using the cmd command to call the WinRAR application to unzip the downloaded zip file. 
+    The cmd command: \"C:/Program Files/WinRAR/WinRAR.exe\" x \"C:/Users/Administrator/Documents/R_Programing/Dataset.zip\"
   3. set new working folder to "~/UCI HAR Dataset"
 
 ##run_analysis.R
