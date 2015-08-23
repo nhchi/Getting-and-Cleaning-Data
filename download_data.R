@@ -2,9 +2,6 @@
 path <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- "Dataset.zip"
-if (!file.exists(path)) {
-  dir.create(path)
-}
 
 # only download for the 1st time
 if (!file.exists(paste (path,f, sep = "/"))) {
