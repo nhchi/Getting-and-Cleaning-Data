@@ -34,9 +34,9 @@ There are 2 options to download the source data
 
 
 ###Run run_analysis.R
-  *Download the run_analysis.R to the same working folder (C:\Users\Administrator\Documents\R_Programing\UCI HAR Dataset\).
-  *In RStudio, source("run_analysis.R")
+    - Download the run_analysis.R to the same working folder (C:\Users\Administrator\Documents\R_Programing\UCI HAR Dataset\).
+    - In RStudio, source("run_analysis.R")
 
 ###Get final result
-  *After running the run_analysis.R, the final tidy data set with the averages is saved as tidy_data_set_with_the_average.txt file under the same working folder.
-  *Or load into RStudio by typing: Use data <- read.table("tidy_data_set_with_the_average.txt") to read the data. 
+    - After running the run_analysis.R, the final tidy data set with the averages is saved as tidy_data_set_with_the_average.txt file under the same working folder.
+    - Or load into RStudio by typing: Use data <- read.table("tidy_data_set_with_the_average.txt") to read the data. 
