@@ -1,7 +1,8 @@
 Code Book
 ========================
 
-The run_analysis.R (under the same repository) performs the following to clean up the data:
+##run_analysis.R
+The run_analysis.R script creates the tidy data set with the averages as follows:
 
 1. Merges the training and test sets to create one data set:
   * train/X_train.txt with test/X_test.txt, the result of which is a 10299x561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561")
