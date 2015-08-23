@@ -24,7 +24,7 @@ From the data set in step 4, creates a second, independent tidy data set with th
 Good luck!
 
 ##Instructions
-###Prepare source data:
+###Prepare source data
 There are 2 options to download the source data
 
 * Option 1: By running the download_data.R script.
